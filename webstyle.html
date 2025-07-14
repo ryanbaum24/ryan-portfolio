@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Style Guide</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet" />
+
+  <!-- Favicon (for browser tab) -->
+  <link rel="icon" type="image/png" href="icon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="webstyle.css" />
+
+  <!-- Inline style for favicon overlay -->
+  <style>
+    .banner-container {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .favicon-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 32px;
+      height: 32px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner-container">
+      <img src="images/banner_ryanbaum.png" alt="Ryan Baum Banner" class="banner" />
+      <img src="icon.png" alt="Site Icon" class="favicon-overlay" />
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="webstyle.html">Style Guide</a>
+    </nav>
+    <h1>Style Guide</h1>
+    <p>Welcome to my custom design system.</p>
+  </header>
+
+  <main>
+    <!-- Color -->
+    <section>
+      <h2>Color Palette</h2>
+      <div class="color-circle primary">#F29BE4</div>
+      <div class="color-circle secondary">#BF5A89</div>
+      <div class="color-circle accent animated">#E93989</div>
+    </section>
+
+    <!-- Typography -->
+    <section>
+      <h2>Typography</h2>
+      <h3 class="heading-font">Heading Example (Sofia)</h3>
+      <p class="body-font">This is body text using the Philosopher font. It’s elegant and easy to read.</p>
+      <pre>
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Philosopher&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Sofia', cursive;
+}
+
+body {
+  font-family: 'Philosopher', sans-serif;
+}
+      </pre>
+    </section>
+
+    <!-- Components -->
+    <section>
+      <h2>Components</h2>
+
+      <h3>Link</h3>
+      <a href="#" class="custom-link">Visit Project</a>
+      <pre>
+.custom-link {
+  color: #E93989;
+  text-decoration: none;
+  font-weight: bold;
+}
+.custom-link:hover {
+  color: #BF5A89;
+  text-decoration: underline;
+}
+      </pre>
+
+      <h3>Button</h3>
+      <button class="custom-button">Click Me</button>
+      <pre>
+.custom-button {
+  background-color: #E93989;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.custom-button:hover {
+  background-color: #BF5A89;
+}
+      </pre>
+
+      <h3>Blockquote</h3>
+      <blockquote class="custom-quote">
+        “The aim of art is to represent not the outward appearance of things, but their inward significance.” – Aristotle
+      </blockquote>
+      <pre>
+.custom-quote {
+  border-left: 5px solid #BF5A89;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #734C70;
+  background-color: #FCE8F8;
+}
+      </pre>
+    </section>
+
+    <!-- Shape -->
+    <section>
+      <h2>Non-Rectangle Shape: CSS Star</h2>
+      <div class="css-star-shape"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ryan Baum</p>
+  </footer>
+</body>
+</html>
+
+
+

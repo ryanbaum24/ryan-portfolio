@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX Navigation Exercise</title>
+
+
+    <link rel="icon" type="image/png" href="icon.png" />
+
+    <link rel="stylesheet" href="navigation.css" />
+
+    <style>
+        /* Icon in top-left corner */
+        .icon-top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 32px;
+            height: 32px;
+            z-index: 100;
+        }
+
+       
+        body {
+            padding-top: 50px;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Visual icon -->
+    <img src="icon.png" alt="Site Icon" class="icon-top-left" />
+
+    <header>
+        <div class="site-cont">
+            <h1>Navigation Exercise</h1>
+            <p>This is an exercise designed to test out navigation methods.</p>
+        </div>
+
+        <nav>
+            <a href="#section1" class="nav-active">Nav 01</a>
+            <a href="#section2">Nav 02</a>
+            <a href="#section3">Nav 03</a>
+            <a href="#section4">Nav 04</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Aside Links</h2>
+            <ul>
+                <li><a href="#">Link 01</a></li>
+                <li><a href="#">Link 02</a></li>
+                <li><a href="#">Link 03</a></li>
+                <ul>
+                    <li><a href="#">Link A</a></li>
+                    <li><a href="#">Link B</a></li>
+                </ul>
+                <li><a href="#">Link 04</a></li>
+                <li><a href="#">Link 05</a></li>
+                <li><a href="#">Link 06</a></li>
+            </ul>
+            <br>
+            <h3>More Aside Links</h3>
+            <ul>
+                <li><a href="#">Link 07</a></li>
+                <li><a href="#">Link 08</a></li>
+                <ul>
+                    <li><a href="#" class="aside-active">Link C</a></li>
+                    <li><a href="#">Link D</a></li>
+                    <li><a href="#">Link E</a></li>
+                </ul>
+                <li><a href="#">Link 09</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <p class="crumbs">
+                <a href="#">Home</a> / <a href="#section1">Nav 01</a> / <a href="#">Link C</a>
+            </p>
+
+            <h2 id="section1">Section 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque justo risus, dictum eu accumsan eu, eleifend et velit. Duis in eleifend erat, ut porta ligula...</p>
+
+            <h2 id="section2">Section 2</h2>
+            <p>Maecenas auctor erat eget condimentum sollicitudin. Nunc ullamcorper et risus auctor pretium. Nam purus nisl, pretium iaculis lobortis nec...</p>
+
+            <h2 id="section3">Section 3</h2>
+            <p>Sed vulputate turpis mauris, convallis luctus elit luctus vel. Nunc imperdiet urna arcu, mollis porttitor justo pretium non...</p>
+
+            <h2 id="section4">Section 4</h2>
+            <p>Mauris non libero diam. Quisque aliquam nisi in dui consequat, ac maximus ante rutrum. Duis pellentesque purus mi...</p>
+
+            <p>Nulla facilisi. Sed ut neque gravida, porttitor lectus vel, ultricies felis. Nunc ac ipsum aliquam, feugiat lectus sit amet, elementum tellus...</p>
+        </section>
+    </main>
+</body>
+</html>
+
