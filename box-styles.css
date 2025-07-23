@@ -1,0 +1,30 @@
+/* Style for h1 elements */
+h1 {
+  border: 1px solid red;
+  background-color: #D18C1D;
+  padding: 10px;
+}
+
+/* Style for list items */
+li {
+  margin: 15px;
+  background-color: #C0A9DB;
+}
+
+/* Style for paragraphs */
+p {
+  width: 600px;
+  height: 400px;
+  border: 2px dotted black;
+  background-color: #D1D631;
+  padding: 10px; /* optional for spacing inside box */
+  overflow: auto; /* if content overflows */
+}
+
+/* Style for links */
+a {
+  border-bottom: 3px dashed blue;
+  background-color: #A1A1A1;
+  text-decoration: none;
+  padding: 4px; /* optional for visual space */
+}

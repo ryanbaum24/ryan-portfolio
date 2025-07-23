@@ -1,0 +1,32 @@
+h1 {
+    color:#E93989;
+    font-family: 'Sofia', cursive;
+    font-size: 70px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 3px solid #BF5A89;
+    margin-top: 5px;
+}
+h2 {
+    color: #E93989;
+    font-family: 'Sofia' , cursive;
+    font-size: 2em;
+}
+ body {
+color: #BF5A89;
+margin: 0 15%;
+font-family: "Philosopher", sans-serif;
+  font-size: 20px;
+  line-height:25px;
+background-color: #F29BE4;
+}
+blockquote {
+    padding: 10px;
+    border: 2px solid #734C70;
+    border-radius: 5px;
+}
+
+dd{
+    font-style:italic;
+}

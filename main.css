@@ -1,0 +1,19 @@
+h1{
+    font-size:32px;
+    color:hotpink;
+}
+
+h2{
+    color:lightpink;
+}
+
+h3{
+    color:hotpink;
+}
+
+blockquote{
+    margin: 32px;
+}
+
+footer{
+    text-align: right

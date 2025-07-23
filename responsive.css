@@ -1,0 +1,75 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+nav a {
+  color: deeppink;
+  text-decoration: none;
+}
+
+/* Basic image styling */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Two-column layout by default */
+.double-column {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.double-column p, .double-column img, .double-column h2 {
+  flex: 1;
+}
+
+/* Hiding one image at smallest breakpoint */
+.hide-small {
+  display: block;
+}
+
+/* Breakpoint: < 992px */
+@media (max-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .double-column {
+    flex-direction: column;
+  }
+}
+
+/* Breakpoint: < 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+/* Breakpoint: < 500px */
+@media (max-width: 500px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .hide-small {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Submitted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hotpink;
+            padding: 20px;
+        }
+
+        .submitted-container {
+            background-color: white;
+            padding: 30px;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .submitted-container h3 {
+            text-align: center;
+            color: hotpink;
+        }
+
+        .submitted-container p {
+            color: black;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="submitted-container">
+        <h3>Thank you for your RSVP!</h3>
+
+        <!-- Display the stored data from localStorage -->
+        <p><strong>First Name:</strong> <span id="firstNameDisplay"></span></p>
+        <p><strong>Last Name:</strong> <span id="lastNameDisplay"></span></p>
+        <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+        <p><strong>Will Attend:</strong> <span id="attendanceDisplay"></span></p>
+        <p><strong>Special Requests:</strong> <span id="messageDisplay"></span></p>
+    </div>
+
+    <script>
+        // Retrieve the data from localStorage
+        const firstName = localStorage.getItem('firstName');
+        const lastName = localStorage.getItem('lastName');
+        const email = localStorage.getItem('email');
+        const attendance = localStorage.getItem('attendance');
+        const message = localStorage.getItem('message');
+
+        // Display the data on the submitted page
+        document.getElementById('firstNameDisplay').textContent = firstName;
+        document.getElementById('lastNameDisplay').textContent = lastName;
+        document.getElementById('emailDisplay').textContent = email;
+        document.getElementById('attendanceDisplay').textContent = attendance;
+        document.getElementById('messageDisplay').textContent = message;
+    </script>
+
+</body>
+</html>
